@@ -27,6 +27,8 @@ const projects = [
     image: "assets/images/Busita.jpg",
     imageAlt: "Illustrated company website preview with a bold blue hero and content cards",
     technologies: ["HTML5", "CSS3", "Bootstrap"],
+    liveUrl: "https://yelicodes.github.io/NovaTech-Digital/",
+    repoUrl: "https://github.com/Yelicodes/NovaTech-Digital",
     note: "Demonstration project. This concept is still in development; no live demo or public source repository is available yet."
   },
   {
