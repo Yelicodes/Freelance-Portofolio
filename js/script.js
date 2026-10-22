@@ -123,7 +123,7 @@ function renderProjects() {
     <article class="project-card" data-project-index="${index}">
       <div class="project-image-wrap">
         <img class="project-image" src="${project.image}" alt="${project.imageAlt}" loading="lazy" width="640" height="386">
-        <span class="project-badge">Demo concept · In progress</span>
+        ${project.liveUrl || project.repoUrl ? "" : `<span class="project-badge">Demo concept · In progress</span>`}
       </div>
       <div class="project-body">
         <p class="project-kicker">${project.category}</p>
