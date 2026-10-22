@@ -69,7 +69,8 @@ const projects = [
     image: "assets/images/presentasi.png",
     imageAlt: "Illustrated presentation slides with a purple and lavender visual system",
     technologies: ["PowerPoint", "Layout", "Typography"],
-    note: "Demonstration project. This concept is still in development; no finished presentation or public source file is available yet."
+    canvaUrl: "https://canva.link/92til0qu9kcgk41",
+    note: "Presentation design sample created in Canva. Open the link above to view it."
   }
 ];
 
@@ -127,7 +128,7 @@ function renderProjects() {
     <article class="project-card" data-project-index="${index}">
       <div class="project-image-wrap">
         <img class="project-image" src="${project.image}" alt="${project.imageAlt}" loading="lazy" width="640" height="386">
-        ${project.liveUrl || project.repoUrl ? "" : `<span class="project-badge">Demo concept · In progress</span>`}
+        ${project.liveUrl || project.repoUrl || project.canvaUrl ? "" : `<span class="project-badge">Demo concept · In progress</span>`}
       </div>
       <div class="project-body">
         <p class="project-kicker">${project.category}</p>
@@ -138,6 +139,7 @@ function renderProjects() {
             <button class="project-details" type="button" data-project-details="${index}" aria-label="View details for ${project.title}">View details <span aria-hidden="true">↗</span></button>
             ${project.liveUrl ? `<a class="project-link" href="${project.liveUrl}" target="_blank" rel="noopener noreferrer">Live demo</a>` : ""}
             ${project.repoUrl ? `<a class="project-link" href="${project.repoUrl}" target="_blank" rel="noopener noreferrer">GitHub</a>` : ""}
+            ${project.canvaUrl ? `<a class="project-link" href="${project.canvaUrl}" target="_blank" rel="noopener noreferrer">Canva</a>` : ""}
             ${!project.liveUrl && !project.repoUrl ? `<span class="project-unavailable">Demo in progress</span>` : ""}
           </div>
       </div>
