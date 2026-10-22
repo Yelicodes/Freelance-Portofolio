@@ -34,12 +34,14 @@ const projects = [
     note: "Live demo and source code are available through the links above."
   },
   {
-    title: "Generasi Muda Bersatu",
+    title: "Komunitas Gereja",
     category: "Community & organization",
     description: "A welcoming organization website concept for sharing programs, updates, and useful community information.",
-    image: "assets/images/Community Organisasi.jpg",
+    image: "assets/images/Community Organisasi.png",
     imageAlt: "Illustrated organization website preview with warm coral and cream colors",
     technologies: ["HTML5", "CSS3", "JavaScript"],
+    liveUrl: "https://yelicodes.github.io/Rukun-Santo-Michael/",
+    repoUrl: "https://github.com/Yelicodes/Rukun-Santo-Michael",
     note: "Live demo and source code are available through the links above."
   },
   {
