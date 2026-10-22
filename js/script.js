@@ -23,7 +23,7 @@ const projects = [
     note: "Live demo and source code are available through the links above."
   },
   {
-    title: "Tech Digital",
+    title: "NovaTech Digital",
     category: "Business website",
     description: "A company website concept focused on clear information, confident visuals, and a straightforward contact journey.",
     image: "assets/images/NovaTech Digital.png",
