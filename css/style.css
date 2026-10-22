@@ -206,13 +206,6 @@ h1, h2, h3 { font-family: var(--font-display); }
 .floating-top.is-visible { transform: translateY(0); opacity: 1; pointer-events: auto; }
 .floating-top:hover { background: #28213e; }
 
-.project-dialog { width: min(540px, calc(100% - 32px)); max-height: min(80vh, 640px); padding: 0; overflow: auto; border: 1px solid rgba(206,202,255,.18); border-radius: 14px; background: #151425; color: var(--text); box-shadow: 0 30px 120px rgba(0,0,0,.6); }
-.project-dialog::backdrop { background: rgba(4,3,12,.78); backdrop-filter: blur(5px); }
-.dialog-content { position: relative; padding: 35px; }
-.dialog-close { position: absolute; top: 18px; right: 19px; width: 34px; height: 34px; border: 1px solid var(--border); border-radius: 7px; background: transparent; color: var(--text); cursor: pointer; font-size: 21px; line-height: 1; }
-.dialog-content .eyebrow { margin-bottom: 14px; }
-.dialog-content h2 { margin: 0 40px 12px 0; font-size: 26px; letter-spacing: -.05em; }
-.dialog-description { color: var(--muted); font-size: 13px; line-height: 1.8; }
 .dialog-tech { display: flex; flex-wrap: wrap; gap: 7px; margin: 18px 0; }
 .dialog-note { margin-bottom: 0; padding: 12px; border: 1px solid rgba(167,139,250,.15); border-radius: 7px; background: rgba(167,139,250,.05); color: #c9c2df; font-size: 11px; line-height: 1.7; }
 
@@ -419,4 +412,41 @@ body { line-height: 1.7; }
   .service-card { min-height: 0; padding: 19px; }
   .service-card p { min-height: 0; }
   .form-field input, .form-field select { min-height: 48px; }
+}
+
+/* Live demo & GitHub links */
+.project-actions {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.project-link,
+.dialog-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 34px;
+  padding: 6px 12px;
+  border: 1px solid rgba(167, 139, 250, .35);
+  border-radius: 7px;
+  background: rgba(167, 139, 250, .07);
+  color: #e1d7ff;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1;
+  transition: background .2s ease, border-color .2s ease, transform .2s ease;
+}
+
+.project-link:hover,
+.dialog-links a:hover {
+  border-color: var(--purple);
+  background: rgba(167, 139, 250, .16);
+  transform: translateY(-2px);
+}
+
+.dialog-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
 }
