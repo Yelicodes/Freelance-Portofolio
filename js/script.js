@@ -18,7 +18,9 @@ const projects = [
     image: "assets/images/Personal Portofolio.png",
     imageAlt: "Illustrated dark portfolio website preview with purple accents",
     technologies: ["HTML5", "CSS3", "JavaScript"],
-    note: "Demonstration project. This concept is still in development; no live demo or public source repository is available yet."
+    liveUrl: "https://yelicodes.github.io/Freelance-Portofolio/",
+    repoUrl: "https://github.com/Yelicodes/Freelance-Portofolio",
+    note: "Live demo and source code are available through the links above."
   },
   {
     title: "Tech Digital",
@@ -29,7 +31,7 @@ const projects = [
     technologies: ["HTML5", "CSS3", "Bootstrap"],
     liveUrl: "https://yelicodes.github.io/NovaTech-Digital/",
     repoUrl: "https://github.com/Yelicodes/NovaTech-Digital",
-    note: "Demonstration project. This concept is still in development; no live demo or public source repository is available yet."
+    note: "Live demo and source code are available through the links above."
   },
   {
     title: "Generasi Muda Bersatu",
@@ -38,7 +40,7 @@ const projects = [
     image: "assets/images/Community Organisasi.jpg",
     imageAlt: "Illustrated organization website preview with warm coral and cream colors",
     technologies: ["HTML5", "CSS3", "JavaScript"],
-    note: "Demonstration project. This concept is still in development; no live demo or public source repository is available yet."
+    note: "Live demo and source code are available through the links above."
   },
   {
     title: "StudentHub — Student Management System.",
