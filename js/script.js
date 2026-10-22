@@ -210,6 +210,11 @@ projectGrid.addEventListener("click", (event) => {
   const project = projects[Number(button.dataset.projectDetails)];
   if (!project) return;
 
+  projectDialog.querySelector(".dialog-links").innerHTML = [
+  project.liveUrl ? `<a href="${project.liveUrl}" target="_blank" rel="noopener noreferrer">Live demo</a>` : "",
+  project.repoUrl ? `<a href="${project.repoUrl}" target="_blank" rel="noopener noreferrer">GitHub</a>` : ""
+  ].join("");
+  
   projectDialog.querySelector("#dialog-title").textContent = project.title;
   projectDialog.querySelector(".dialog-description").textContent = project.description;
   projectDialog.querySelector(".dialog-note").textContent = project.note;
