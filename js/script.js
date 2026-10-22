@@ -130,8 +130,6 @@ function renderProjects() {
         <h3>${project.title}</h3>
         <p class="project-description">${project.description}</p>
         <div class="tech-list" aria-label="Technologies">
-          ${project.technologies.map((technology) => `<span class="tech-chip">${technology}</span>`).join("")}
-        </div>
           <div class="project-actions">
             <button class="project-details" type="button" data-project-details="${index}" aria-label="View details for ${project.title}">View details <span aria-hidden="true">↗</span></button>
             ${project.liveUrl ? `<a class="project-link" href="${project.liveUrl}" target="_blank" rel="noopener noreferrer">Live demo</a>` : ""}
