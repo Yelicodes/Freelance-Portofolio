@@ -130,10 +130,12 @@ function renderProjects() {
         <div class="tech-list" aria-label="Technologies">
           ${project.technologies.map((technology) => `<span class="tech-chip">${technology}</span>`).join("")}
         </div>
-        <div class="project-actions">
-          <button class="project-details" type="button" data-project-details="${index}" aria-label="View details for ${project.title}">View details <span aria-hidden="true">↗</span></button>
-          <span class="project-unavailable">Demo in progress</span>
-        </div>
+          <div class="project-actions">
+            <button class="project-details" type="button" data-project-details="${index}" aria-label="View details for ${project.title}">View details <span aria-hidden="true">↗</span></button>
+            ${project.liveUrl ? `<a class="project-link" href="${project.liveUrl}" target="_blank" rel="noopener noreferrer">Live demo</a>` : ""}
+            ${project.repoUrl ? `<a class="project-link" href="${project.repoUrl}" target="_blank" rel="noopener noreferrer">GitHub</a>` : ""}
+            ${!project.liveUrl && !project.repoUrl ? `<span class="project-unavailable">Demo in progress</span>` : ""}
+          </div>
       </div>
     </article>
   `).join("");
