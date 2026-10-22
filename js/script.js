@@ -24,7 +24,7 @@ const projects = [
     title: "Tech Digital",
     category: "Business website",
     description: "A company website concept focused on clear information, confident visuals, and a straightforward contact journey.",
-    image: "assets/images/Busita.jpg",
+    image: "assets/images/NovaTech Digital.png",
     imageAlt: "Illustrated company website preview with a bold blue hero and content cards",
     technologies: ["HTML5", "CSS3", "Bootstrap"],
     liveUrl: "https://yelicodes.github.io/NovaTech-Digital/",
