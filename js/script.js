@@ -45,6 +45,17 @@ const projects = [
     note: "Live demo and source code are available through the links above."
   },
   {
+    title: "Explore Wonders",
+    category: "Adventure & Travel",
+    description: "A welcoming adventure website concept for exploring and sharing travel experiences.",
+    image: "assets/images/Explore Wonders.png",
+    imageAlt: "Illustrated adventure website preview with warm coral and cream colors",
+    technologies: ["HTML5", "CSS3", "JavaScript"],
+    liveUrl: "https://yelicodes.github.io/Tropical-Wonders-Explore-Southeast-Asia/",
+    repoUrl: "https://github.com/Yelicodes/Tropical-Wonders-Explore-Southeast-Asia",
+    note: "Live demo and source code are available through the links above."
+  },
+  {
     title: "StudentHub — Student Management System.",
     category: "Web application",
     description: "An in-progress dashboard concept for organizing student records and common administrative tasks.",
